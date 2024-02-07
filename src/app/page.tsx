@@ -1,12 +1,33 @@
 import { Box, Button, Slider, Typography } from "@mui/material";
+import { blueGrey } from "@mui/material/colors";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <>
+      <Box
+        component="section"
+        bgcolor={"info.main"}
+        border={"3px solid  grey"}
+        padding={2}
+        margin={2}
+      >
+        This is a section container
+      </Box>
+      <Box
+        component="section"
+        sx={{
+          bgcolor: "blue",
+          padding: 2,
+          border: "3px solid  grey",
+          margin: 2,
+        }}
+      >
+        This is a section container
+      </Box>
+
       <main className="flex ">
         <h1 className="text-3xl font-bold underline">Home</h1>
-
         <div>
           <Button variant="text" color="success">
             Text

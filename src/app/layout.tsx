@@ -23,9 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} `}>
         <ResponsiveAppBar />
         <main>
-          <Container sx={{ bgcolor: "white", marginY: 5, paddingY: 2 }}>
-            {children}
-          </Container>
+          <Container sx={{ marginY: 5, paddingY: 2 }}>{children}</Container>
         </main>
       </body>
     </html>
